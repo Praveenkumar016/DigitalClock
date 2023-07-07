@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#container,
+#alarmContainer {
+    width: 60%;
+    height: 60vh;
+    background-color: rgba(128, 128, 128, 0.434);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    box-shadow: 5px 5px 5px black;
+}
+
+#sec {
+    position: absolute;
+    z-index: -1;
+    font-size: 60vh;
+}
+
+#alarmContainer {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: rgba(137, 43, 226, 0.612);
+    box-shadow: 5px 5px 5px black;
+}
+
+select,
+#btn {
+    width: 30%;
+    height: 10vh;
+    /* position: absolute; */
+    /* top: 30%; */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(100, 148, 237);
+}
+
+h1 {
+    color: coral;
+    text-shadow: 2px 2px 5px black;
+}
+
+#time {
+    font-size: 10vw;
+}
+
+#date {
+    font-size: 5vw;
+}
+
+#day {
+    font-size: 5vw;
+}
+
+#sec {
+    color: rgba(126, 252, 0, 0.777);
+}
+
+#btn {
+    position: absolute;
+    bottom: 10%;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: indianred;
+    border: none;
+}
+
+#close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    cursor: pointer;
+}
+
+#selector {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    font-size: 50px;
+}
+
+#am_pm {
+    width: 20%;
+}
+
+#bell {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+#greeting {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.685);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+#greet {
+    font-size: 20vh;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+#close1 {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
